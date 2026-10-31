@@ -1,0 +1,21 @@
+These 5 files are the only ones that differ from what is live on
+https://quarshs-printing-hub.vercel.app (checked file by file, 31 Oct 2026).
+
+  css/app.css               storage meter styles
+  js/db.js                  snapshot data moved to IndexedDB (7x more device life)
+                            + storageUsage() for the meter
+  js/views/settings.js      async snapshot restore, Device storage meter,
+                            Windows/Mac laptop install steps
+  DEPLOY-GUIDE.md           repository renamed to quarshs-press
+  README.md                 changelog + the real live address
+                            (this file was missing from the live site entirely)
+
+HOW TO UPLOAD
+1. Unzip this. You get a folder called quarshs-app.
+2. On GitHub (branch main): Add file > Upload files.
+3. Drag the CONTENTS of that folder (css, js, and the 3 files) onto the page.
+   Drag the items inside the folder, not the folder itself.
+4. Commit message: v1.10.0 storage headroom
+5. Wait for Vercel to say Ready, then refresh the app twice on each device.
+
+Nothing in here touches Supabase. Nothing needs the SQL editor again.
